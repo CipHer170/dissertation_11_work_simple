@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import io from "socket.io-client";
 
 export default function AllData({ onStopCapture }) {
@@ -6,6 +6,41 @@ export default function AllData({ onStopCapture }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [isCapturing, setIsCapturing] = useState(true);
   const logsPerPage = 20; // Количество записей на странице
+
+  // Calculate statistics using useMemo to avoid unnecessary recalculations
+  const statistics = useMemo(() => {
+    const domainStats = {};
+    const deviceStats = {
+      totalDevices: new Set(),
+      totalDataTransferred: 0
+    };
+
+    logs.forEach(log => {
+      // Domain statistics
+      if (!domainStats[log.domain]) {
+        domainStats[log.domain] = {
+          firstSeen: log.time,
+          lastSeen: log.time,
+          dataTransferred: 0
+        };
+      } else {
+        domainStats[log.domain].lastSeen = log.time;
+      }
+      domainStats[log.domain].dataTransferred += parseInt(log.length) || 0;
+
+      // Device statistics
+      deviceStats.totalDevices.add(log.ip);
+      deviceStats.totalDataTransferred += parseInt(log.length) || 0;
+    });
+
+    return {
+      domainStats,
+      deviceStats: {
+        totalDevices: deviceStats.totalDevices.size,
+        totalDataTransferred: deviceStats.totalDataTransferred
+      }
+    };
+  }, [logs]);
 
   useEffect(() => {
     // Загружаем старые логи при старте
@@ -84,6 +119,51 @@ export default function AllData({ onStopCapture }) {
           <p>Данные пока не поступают...</p>
         ) : (
           <>
+            {/* Statistics Tables */}
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Статистика по доменам</h3>
+              <table className="w-full text-sm border-collapse mb-4">
+                <thead>
+                  <tr>
+                    <th className="border px-2 py-1">Домен</th>
+                    <th className="border px-2 py-1">Первый запрос</th>
+                    <th className="border px-2 py-1">Последний запрос</th>
+                    <th className="border px-2 py-1">Объем данных (байт)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(statistics.domainStats).map(([domain, stats]) => (
+                    <tr key={domain}>
+                      <td className="border px-2 py-1">{domain}</td>
+                      <td className="border px-2 py-1">{stats.firstSeen}</td>
+                      <td className="border px-2 py-1">{stats.lastSeen}</td>
+                      <td className="border px-2 py-1">{stats.dataTransferred}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              <h3 className="text-lg font-semibold mb-2">Общая статистика</h3>
+              <table className="w-full text-sm border-collapse mb-4">
+                <thead>
+                  <tr>
+                    <th className="border px-2 py-1">Показатель</th>
+                    <th className="border px-2 py-1">Значение</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border px-2 py-1">Количество уникальных устройств</td>
+                    <td className="border px-2 py-1">{statistics.deviceStats.totalDevices}</td>
+                  </tr>
+                  <tr>
+                    <td className="border px-2 py-1">Общий объем переданных данных</td>
+                    <td className="border px-2 py-1">{statistics.deviceStats.totalDataTransferred} байт</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <table className="w-full text-sm border-collapse mb-4">
               <thead>
                 <tr>
