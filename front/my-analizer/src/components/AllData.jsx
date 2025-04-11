@@ -27,7 +27,87 @@ export default function AllData({ onStopCapture }) {
   const [logs, setLogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [isCapturing, setIsCapturing] = useState(true);
-  const logsPerPage = 20; // Количество записей на странице
+  const [isLoading, setIsLoading] = useState(false);
+  const logsPerPage = 20;
+
+  // Filter states
+  const [filters, setFilters] = useState({
+    domain: "",
+    minDataSize: "",
+    maxDataSize: "",
+    startDate: "",
+    endDate: "",
+    activeOnly: false,
+  });
+
+  // Function to load logs from the server
+  const loadLogs = async () => {
+    setIsLoading(true);
+    try {
+      const res = await fetch("http://localhost:5000/logs");
+      const data = await res.json();
+      setLogs(data);
+      console.log("Логи успешно загружены");
+    } catch (err) {
+      console.error("Ошибка загрузки логов:", err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // Filter logs based on current filter settings
+  const filteredLogs = useMemo(() => {
+    return logs.filter((log) => {
+      // Domain filter
+      if (filters.domain && !log.domain.includes(filters.domain)) {
+        return false;
+      }
+
+      // Data size filters
+      const dataSize = parseInt(log.length) || 0;
+      if (filters.minDataSize && dataSize < parseInt(filters.minDataSize)) {
+        return false;
+      }
+      if (filters.maxDataSize && dataSize > parseInt(filters.maxDataSize)) {
+        return false;
+      }
+
+      // Date filters
+      if (filters.startDate && log.time < filters.startDate) {
+        return false;
+      }
+      if (filters.endDate && log.time > filters.endDate) {
+        return false;
+      }
+
+      // Active only filter (domains with recent activity)
+      if (filters.activeOnly) {
+        const now = new Date();
+        const logTime = new Date(log.time);
+        const hoursDiff = (now - logTime) / (1000 * 60 * 60);
+        if (hoursDiff > 24) {
+          // Consider active if within last 24 hours
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [logs, filters]);
+
+  // Reset filters
+  const resetFilters = () => {
+    setFilters({
+      domain: "",
+      minDataSize: "",
+      maxDataSize: "",
+      startDate: "",
+      endDate: "",
+      activeOnly: false,
+    });
+    // Reset to first page when filters are reset
+    setCurrentPage(1);
+  };
 
   // Calculate statistics using useMemo to avoid unnecessary recalculations
   const statistics = useMemo(() => {
@@ -37,7 +117,7 @@ export default function AllData({ onStopCapture }) {
       totalDataTransferred: 0,
     };
 
-    logs.forEach((log) => {
+    filteredLogs.forEach((log) => {
       // Domain statistics
       if (!domainStats[log.domain]) {
         domainStats[log.domain] = {
@@ -48,9 +128,9 @@ export default function AllData({ onStopCapture }) {
         };
       } else {
         domainStats[log.domain].lastSeen = log.time;
-        domainStats[log.domain].requestCount += 1;
       }
       domainStats[log.domain].dataTransferred += parseInt(log.length) || 0;
+      domainStats[log.domain].requestCount += 1;
 
       // Device statistics
       deviceStats.totalDevices.add(log.ip);
@@ -64,7 +144,7 @@ export default function AllData({ onStopCapture }) {
         totalDataTransferred: deviceStats.totalDataTransferred,
       },
     };
-  }, [logs]);
+  }, [filteredLogs]);
 
   // Prepare chart data
   const chartData = useMemo(() => {
@@ -172,10 +252,7 @@ export default function AllData({ onStopCapture }) {
 
   useEffect(() => {
     // Загружаем старые логи при старте
-    fetch("http://localhost:5000/logs")
-      .then((res) => res.json())
-      .then((data) => setLogs(data))
-      .catch((err) => console.error("Ошибка загрузки логов:", err));
+    loadLogs();
 
     // Подключаемся к WebSocket
     const socket = io("http://localhost:5000");
@@ -207,11 +284,18 @@ export default function AllData({ onStopCapture }) {
     }
   };
 
-  // Расчет пагинации
+  // Calculation of pagination should be done after filtering
   const indexOfLastLog = currentPage * logsPerPage;
   const indexOfFirstLog = indexOfLastLog - logsPerPage;
-  const currentLogs = logs.slice(indexOfFirstLog, indexOfLastLog);
-  const totalPages = Math.ceil(logs.length / logsPerPage);
+  const currentLogs = filteredLogs.slice(indexOfFirstLog, indexOfLastLog);
+  const totalPages = Math.max(1, Math.ceil(filteredLogs.length / logsPerPage));
+
+  // Ensure current page is valid after filtering
+  useEffect(() => {
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages);
+    }
+  }, [filteredLogs, currentPage, totalPages]);
 
   // Изменение страницы
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -219,12 +303,32 @@ export default function AllData({ onStopCapture }) {
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
   const prevPage = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
 
+  // Handle filter changes
+  const handleFilterChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFilters((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+    // Reset to first page when filters change
+    setCurrentPage(1);
+  };
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded shadow-lg w-[800px] max-h-[90vh] overflow-y-auto">
+      <div className="bg-white p-6 rounded shadow-lg w-[1000px] max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-bold">Данные DNS трафика</h2>
           <div className="flex space-x-2">
+            <button
+              onClick={loadLogs}
+              disabled={isLoading}
+              className={`px-4 py-2 rounded ${
+                isLoading ? "bg-gray-400" : "bg-green-600 hover:bg-green-700"
+              } text-white`}
+            >
+              {isLoading ? "Загрузка..." : "Обновить данные"}
+            </button>
             <button
               onClick={handleStopCapture}
               className={`px-4 py-2 rounded ${
@@ -243,8 +347,101 @@ export default function AllData({ onStopCapture }) {
           </div>
         </div>
 
+        {/* Filter Controls */}
+        <div className="mb-4 p-4 bg-gray-50 rounded-lg">
+          <h3 className="text-lg font-semibold mb-2">Фильтры</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Домен
+              </label>
+              <input
+                type="text"
+                name="domain"
+                value={filters.domain}
+                onChange={handleFilterChange}
+                placeholder="Фильтр по домену"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Размер данных (байт)
+              </label>
+              <div className="flex space-x-2">
+                <input
+                  type="number"
+                  name="minDataSize"
+                  value={filters.minDataSize}
+                  onChange={handleFilterChange}
+                  placeholder="Мин"
+                  className="w-1/2 px-3 py-2 border border-gray-300 rounded-md"
+                />
+                <input
+                  type="number"
+                  name="maxDataSize"
+                  value={filters.maxDataSize}
+                  onChange={handleFilterChange}
+                  placeholder="Макс"
+                  className="w-1/2 px-3 py-2 border border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Период
+              </label>
+              <div className="flex space-x-2">
+                <input
+                  type="datetime-local"
+                  name="startDate"
+                  value={filters.startDate}
+                  onChange={handleFilterChange}
+                  className="w-1/2 px-3 py-2 border border-gray-300 rounded-md"
+                />
+                <input
+                  type="datetime-local"
+                  name="endDate"
+                  value={filters.endDate}
+                  onChange={handleFilterChange}
+                  className="w-1/2 px-3 py-2 border border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 flex justify-between items-center">
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                id="activeOnly"
+                name="activeOnly"
+                checked={filters.activeOnly}
+                onChange={handleFilterChange}
+                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+              />
+              <label
+                htmlFor="activeOnly"
+                className="ml-2 block text-sm text-gray-700"
+              >
+                Только активные домены (за последние 24 часа)
+              </label>
+            </div>
+            <button
+              onClick={resetFilters}
+              className="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded text-gray-800"
+            >
+              Сбросить фильтры
+            </button>
+          </div>
+          <div className="mt-2 text-sm text-gray-600">
+            Показано: {filteredLogs.length} из {logs.length} записей
+          </div>
+        </div>
+
         {logs.length === 0 ? (
           <p>Данные пока не поступают...</p>
+        ) : filteredLogs.length === 0 ? (
+          <p>Нет данных, соответствующих выбранным фильтрам</p>
         ) : (
           <>
             {/* Interactive Charts */}
@@ -256,6 +453,7 @@ export default function AllData({ onStopCapture }) {
                 <Bar data={chartData.dataTransferData} options={barOptions} />
               </div>
             </div>
+
             {/* Statistics Tables */}
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">
@@ -281,7 +479,6 @@ export default function AllData({ onStopCapture }) {
                         <td className="border px-2 py-1">
                           {stats.requestCount}
                         </td>
-
                         <td className="border px-2 py-1">
                           {stats.dataTransferred}
                         </td>
@@ -319,6 +516,7 @@ export default function AllData({ onStopCapture }) {
                 </tbody>
               </table>
             </div>
+
             <table className="w-full text-sm border-collapse mb-4">
               <thead>
                 <tr>
@@ -346,7 +544,7 @@ export default function AllData({ onStopCapture }) {
             <div className="flex justify-between items-center">
               <div>
                 Страница {currentPage} из {totalPages} (всего записей:{" "}
-                {logs.length})
+                {filteredLogs.length})
               </div>
               <div className="flex space-x-1">
                 <button

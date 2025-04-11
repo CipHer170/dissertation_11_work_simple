@@ -10,6 +10,7 @@ export default function AllData({ onStopCapture }) {
   const [logs, setLogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [isCapturing, setIsCapturing] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const logsPerPage = 20;
   
   // Filter states
@@ -21,6 +22,21 @@ export default function AllData({ onStopCapture }) {
     endDate: '',
     activeOnly: false
   });
+  
+  // Function to load logs from the server
+  const loadLogs = async () => {
+    setIsLoading(true);
+    try {
+      const res = await fetch("http://localhost:5000/logs");
+      const data = await res.json();
+      setLogs(data);
+      console.log("Логи успешно загружены");
+    } catch (err) {
+      console.error("Ошибка загрузки логов:", err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
   
   // Filter logs based on current filter settings
   const filteredLogs = useMemo(() => {
@@ -71,6 +87,7 @@ export default function AllData({ onStopCapture }) {
       endDate: '',
       activeOnly: false
     });
+    // Reset to first page when filters are reset
     setCurrentPage(1);
   };
 
@@ -213,10 +230,7 @@ export default function AllData({ onStopCapture }) {
 
   useEffect(() => {
     // Загружаем старые логи при старте
-    fetch("http://localhost:5000/logs")
-      .then((res) => res.json())
-      .then((data) => setLogs(data))
-      .catch((err) => console.error("Ошибка загрузки логов:", err));
+    loadLogs();
 
     // Подключаемся к WebSocket
     const socket = io("http://localhost:5000");
@@ -248,11 +262,18 @@ export default function AllData({ onStopCapture }) {
     }
   };
 
-  // Расчет пагинации
+  // Calculation of pagination should be done after filtering
   const indexOfLastLog = currentPage * logsPerPage;
   const indexOfFirstLog = indexOfLastLog - logsPerPage;
   const currentLogs = filteredLogs.slice(indexOfFirstLog, indexOfLastLog);
-  const totalPages = Math.ceil(filteredLogs.length / logsPerPage);
+  const totalPages = Math.max(1, Math.ceil(filteredLogs.length / logsPerPage));
+
+  // Ensure current page is valid after filtering
+  useEffect(() => {
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages);
+    }
+  }, [filteredLogs, currentPage, totalPages]);
 
   // Изменение страницы
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -267,7 +288,8 @@ export default function AllData({ onStopCapture }) {
       ...prev,
       [name]: type === 'checkbox' ? checked : value
     }));
-    setCurrentPage(1); // Reset to first page when filters change
+    // Reset to first page when filters change
+    setCurrentPage(1);
   };
 
   return (
@@ -276,6 +298,15 @@ export default function AllData({ onStopCapture }) {
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-bold">Данные DNS трафика</h2>
           <div className="flex space-x-2">
+            <button
+              onClick={loadLogs}
+              disabled={isLoading}
+              className={`px-4 py-2 rounded ${
+                isLoading ? "bg-gray-400" : "bg-green-600 hover:bg-green-700"
+              } text-white`}
+            >
+              {isLoading ? "Загрузка..." : "Обновить данные"}
+            </button>
             <button
               onClick={handleStopCapture}
               className={`px-4 py-2 rounded ${
