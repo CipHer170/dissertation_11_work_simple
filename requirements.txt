@@ -4,3 +4,4 @@ Flask-SocketIO==5.3.6
 eventlet==0.33.3
 scapy==2.5.0
 psutil==5.9.8
+# remove (hide) background services of each device. automatically determine what to hide. do not repeat what aleady in array

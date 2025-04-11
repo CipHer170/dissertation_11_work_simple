@@ -456,38 +456,6 @@ export default function AllData({ onStopCapture }) {
 
             {/* Statistics Tables */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Статистика по доменам
-              </h3>
-              <table className="w-full text-sm border-collapse mb-4">
-                <thead>
-                  <tr>
-                    <th className="border px-2 py-1">Домен</th>
-                    <th className="border px-2 py-1">Первый запрос</th>
-                    <th className="border px-2 py-1">Последний запрос</th>
-                    <th className="border px-2 py-1">Количество запросов</th>
-                    <th className="border px-2 py-1">Объем данных (байт)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Object.entries(statistics.domainStats).map(
-                    ([domain, stats]) => (
-                      <tr key={domain}>
-                        <td className="border px-2 py-1">{domain}</td>
-                        <td className="border px-2 py-1">{stats.firstSeen}</td>
-                        <td className="border px-2 py-1">{stats.lastSeen}</td>
-                        <td className="border px-2 py-1">
-                          {stats.requestCount}
-                        </td>
-                        <td className="border px-2 py-1">
-                          {stats.dataTransferred}
-                        </td>
-                      </tr>
-                    )
-                  )}
-                </tbody>
-              </table>
-
               <h3 className="text-lg font-semibold mb-2">Общая статистика</h3>
               <table className="w-full text-sm border-collapse mb-4">
                 <thead>
@@ -513,6 +481,43 @@ export default function AllData({ onStopCapture }) {
                       {statistics.deviceStats.totalDataTransferred} байт
                     </td>
                   </tr>
+                </tbody>
+              </table>
+
+              {/* до после статистика */}
+              <h3 className="text-lg font-semibold mb-2">
+                Статистика по доменам
+              </h3>
+              <table className="w-full text-sm border-collapse mb-4">
+                <thead>
+                  <tr>
+                    <th className="border px-2 py-1">Домен</th>
+                    <th className="border px-2 py-1">Первый запрос</th>
+                    <th className="border px-2 py-1">Последний запрос</th>
+                    <th className="border px-2 py-1">Количество запросов</th>
+                    <th className="border px-2 py-1">Объем данных (байт)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(statistics.domainStats).map(
+                    ([domain, stats]) => (
+                      <tr key={domain}>
+                        <td className="border px-2 py-1">{domain}</td>
+                        <td className="border px-2 py-1">
+                          {stats.firstSeen.slice(10, 19)}
+                        </td>
+                        <td className="border px-2 py-1">
+                          {stats.lastSeen.slice(10, 19)}
+                        </td>
+                        <td className="border px-2 py-1">
+                          {stats.requestCount}
+                        </td>
+                        <td className="border px-2 py-1">
+                          {stats.dataTransferred}
+                        </td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </table>
             </div>

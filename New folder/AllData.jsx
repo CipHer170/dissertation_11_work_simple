@@ -13,6 +13,14 @@ export default function AllData({ onStopCapture }) {
   const [isLoading, setIsLoading] = useState(false);
   const logsPerPage = 20;
   
+  // Common ports definition
+  const commonPorts = {
+    80: 'HTTP',
+    443: 'HTTPS',
+    21: 'FTP',
+    22: 'SSH'
+  };
+  
   // Filter states
   const [filters, setFilters] = useState({
     domain: '',
@@ -20,7 +28,8 @@ export default function AllData({ onStopCapture }) {
     maxDataSize: '',
     startDate: '',
     endDate: '',
-    activeOnly: false
+    activeOnly: false,
+    ports: [] // Add ports filter
   });
   
   // Function to load logs from the server
@@ -41,9 +50,22 @@ export default function AllData({ onStopCapture }) {
   // Filter logs based on current filter settings
   const filteredLogs = useMemo(() => {
     return logs.filter(log => {
+      // Skip entries without port information
+      if (!log.port) {
+        return false;
+      }
+      
       // Domain filter
       if (filters.domain && !log.domain.includes(filters.domain)) {
         return false;
+      }
+      
+      // Port filter
+      if (filters.ports.length > 0) {
+        const port = parseInt(log.port);
+        if (!port || !filters.ports.includes(port)) {
+          return false;
+        }
       }
       
       // Data size filters
@@ -68,7 +90,7 @@ export default function AllData({ onStopCapture }) {
         const now = new Date();
         const logTime = new Date(log.time);
         const hoursDiff = (now - logTime) / (1000 * 60 * 60);
-        if (hoursDiff > 24) { // Consider active if within last 24 hours
+        if (hoursDiff > 24) {
           return false;
         }
       }
@@ -77,6 +99,17 @@ export default function AllData({ onStopCapture }) {
     });
   }, [logs, filters]);
   
+  // Handle port selection
+  const handlePortToggle = (port) => {
+    setFilters(prev => ({
+      ...prev,
+      ports: prev.ports.includes(port)
+        ? prev.ports.filter(p => p !== port)
+        : [...prev.ports, port]
+    }));
+    setCurrentPage(1);
+  };
+
   // Reset filters
   const resetFilters = () => {
     setFilters({
@@ -85,9 +118,9 @@ export default function AllData({ onStopCapture }) {
       maxDataSize: '',
       startDate: '',
       endDate: '',
-      activeOnly: false
+      activeOnly: false,
+      ports: []
     });
-    // Reset to first page when filters are reset
     setCurrentPage(1);
   };
 
@@ -328,6 +361,33 @@ export default function AllData({ onStopCapture }) {
         {/* Filter Controls */}
         <div className="mb-4 p-4 bg-gray-50 rounded-lg">
           <h3 className="text-lg font-semibold mb-2">Фильтры</h3>
+          
+          {/* Port Selection */}
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Порты
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {Object.entries(commonPorts).map(([port, name]) => (
+                <button
+                  key={port}
+                  onClick={() => handlePortToggle(parseInt(port))}
+                  className={`px-3 py-1 rounded-full text-sm ${
+                    filters.ports.includes(parseInt(port))
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                  }`}
+                >
+                  {name} ({port})
+                </button>
+              ))}
+            </div>
+            <p className="text-sm text-gray-600 mt-2">
+              Показаны только записи с указанным портом. {filters.ports.length > 0 && 'Выбраны порты: ' + 
+                filters.ports.map(port => `${commonPorts[port]} (${port})`).join(', ')}
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -409,7 +469,12 @@ export default function AllData({ onStopCapture }) {
             </button>
           </div>
           <div className="mt-2 text-sm text-gray-600">
-            Показано: {filteredLogs.length} из {logs.length} записей
+            Показано: {filteredLogs.length} из {logs.filter(log => log.port).length} записей с портами
+            {filters.ports.length > 0 && (
+              <span className="ml-2">
+                (Фильтр по портам: {filters.ports.map(port => `${commonPorts[port]} (${port})`).join(', ')})
+              </span>
+            )}
           </div>
         </div>
 
@@ -482,6 +547,7 @@ export default function AllData({ onStopCapture }) {
                   <th className="border px-2 py-1">Время</th>
                   <th className="border px-2 py-1">IP-адрес</th>
                   <th className="border px-2 py-1">Домен</th>
+                  <th className="border px-2 py-1">Порт</th>
                   <th className="border px-2 py-1">Протокол</th>
                   <th className="border px-2 py-1">Длина</th>
                 </tr>
@@ -492,6 +558,7 @@ export default function AllData({ onStopCapture }) {
                     <td className="border px-2 py-1">{log.time}</td>
                     <td className="border px-2 py-1">{log.ip}</td>
                     <td className="border px-2 py-1">{log.domain}</td>
+                    <td className="border px-2 py-1">{log.port}</td>
                     <td className="border px-2 py-1">{log.protocol}</td>
                     <td className="border px-2 py-1">{log.length}</td>
                   </tr>
