@@ -46,7 +46,7 @@ import { useState } from "react";
 function App() {
   const [showModal, setShowModal] = useState(true);
 
-  const stopCapture = async () => {
+  const handleStopCapture = async () => {
     try {
       const res = await fetch("http://localhost:5000/stop", {
         method: "POST",
@@ -62,15 +62,7 @@ function App() {
       {showModal ? (
         <InterfaceSelector onStart={() => setShowModal(false)} />
       ) : (
-        <>
-          <AllData />
-          <button
-            className="fixed bottom-4 right-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700"
-            onClick={stopCapture}
-          >
-            Сменить интерфейс
-          </button>
-        </>
+        <AllData onStopCapture={handleStopCapture} />
       )}
     </>
   );
