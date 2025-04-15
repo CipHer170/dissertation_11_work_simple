@@ -18,16 +18,13 @@ export default function InterfaceSelector({ onStart }) {
       });
   }, []);
 
-  const handleStart = async () => {
-    if (!selected) {
-      console.error("Нет выбранного интерфейса");
-      return;
-    }
+  const handleInterfaceClick = async (interfaceName) => {
+    setSelected(interfaceName); // Устанавливаем выбранный интерфейс
     try {
       const res = await fetch("http://localhost:5000/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ interface: selected }),
+        body: JSON.stringify({ interface: interfaceName }),
       });
       if (res.ok) onStart();
       else console.error("Ошибка запуска захвата");
@@ -37,31 +34,27 @@ export default function InterfaceSelector({ onStart }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded shadow-lg w-[400px]">
-        <h2 className="text-xl font-bold mb-4">Выберите сетевой интерфейс</h2>
+    <div className="interfaces ">
+      <h2 className="interfaces__title">Выберите сетевой интерфейс</h2>
+      <div className="interfaces__list ">
         {loading ? (
-          <p>Загрузка интерфейсов...</p>
+          <p className="interfces__loading">Загрузка интерфейсов...</p>
         ) : (
           <>
-            <select
-              className="w-full border p-2 rounded mb-4"
-              value={selected}
-              onChange={(e) => setSelected(e.target.value)}
-            >
-              {interfaces.map((intf, i) => (
-                <option key={i} value={intf.name}>
-                  {intf.name}
-                </option>
-              ))}
-            </select>
-            <button
-              onClick={handleStart}
-              disabled={!selected}
-              className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
-            >
-              🚀 Начать захват
-            </button>
+            {/* Список ссылок без кнопки */}
+            {interfaces.map((intf, i) => (
+              <button
+                id={i}
+                className={`interfaces__id ${
+                  selected === intf.name
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-100"
+                }`}
+                onClick={() => handleInterfaceClick(intf.name)}
+              >
+                {intf.name}
+              </button>
+            ))}
           </>
         )}
       </div>
