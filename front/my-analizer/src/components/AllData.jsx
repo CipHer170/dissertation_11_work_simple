@@ -220,127 +220,76 @@ export default function AllData({ onStopCapture }) {
   const prevPage = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded shadow-lg w-[800px] max-h-[90vh] overflow-y-auto">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold">Данные DNS трафика</h2>
-          <div className="flex space-x-2">
-            <button
-              onClick={handleStopCapture}
-              className={`px-4 py-2 rounded ${
-                isCapturing ? "bg-red-600 hover:bg-red-700" : "bg-gray-400"
-              } text-white`}
-              disabled={!isCapturing}
-            >
-              Остановить захват
-            </button>
-            <button
-              onClick={onStopCapture}
-              className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-white"
-            >
-              Сменить интерфейс
-            </button>
-          </div>
+    <div className="bg-white p-6 rounded-lg shadow-lg">
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-bold">Данные DNS трафика</h2>
+        <div className="flex space-x-2">
+          <button
+            onClick={handleStopCapture}
+            className={`px-4 py-2 rounded ${
+              isCapturing ? "bg-red-600 hover:bg-red-700" : "bg-gray-400"
+            } text-white`}
+            disabled={!isCapturing}
+          >
+            Остановить захват
+          </button>
         </div>
+      </div>
 
-        {logs.length === 0 ? (
-          <p>Данные пока не поступают...</p>
-        ) : (
-          <>
-            {/* Interactive Charts */}
-            <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white p-4 rounded shadow">
-                <Pie data={chartData.domainActivityData} options={pieOptions} />
-              </div>
-              <div className="bg-white p-4 rounded shadow">
-                <Bar data={chartData.dataTransferData} options={barOptions} />
-              </div>
+      {logs.length === 0 ? (
+        <p>Данные пока не поступают...</p>
+      ) : (
+        <>
+          {/* Interactive Charts */}
+          <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded shadow">
+              <Pie data={chartData.domainActivityData} options={pieOptions} />
             </div>
-            {/* Statistics Tables */}
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Статистика по доменам
-              </h3>
+            <div className="bg-white p-4 rounded shadow">
+              <Bar data={chartData.dataTransferData} options={barOptions} />
+            </div>
+          </div>
+
+          {/* Combined Statistics and Logs Table */}
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold mb-2">
+              Статистика и логи DNS трафика
+            </h3>
+            <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse mb-4">
                 <thead>
-                  <tr>
+                  <tr className="bg-gray-100">
                     <th className="border px-2 py-1">Домен</th>
+                    <th className="border px-2 py-1">IP-адрес</th>
+                    <th className="border px-2 py-1">Время</th>
+                    <th className="border px-2 py-1">Протокол</th>
+                    <th className="border px-2 py-1">Длина (байт)</th>
+                    <th className="border px-2 py-1">Количество запросов</th>
                     <th className="border px-2 py-1">Первый запрос</th>
                     <th className="border px-2 py-1">Последний запрос</th>
-                    <th className="border px-2 py-1">Количество запросов</th>
-                    <th className="border px-2 py-1">Объем данных (байт)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.entries(statistics.domainStats).map(
-                    ([domain, stats]) => (
-                      <tr key={domain}>
+                  {Object.entries(statistics.domainStats).map(([domain, stats]) => {
+                    // Find all logs for this domain
+                    const domainLogs = logs.filter(log => log.domain === domain);
+                    
+                    return domainLogs.map((log, index) => (
+                      <tr key={`${domain}-${index}`} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                         <td className="border px-2 py-1">{domain}</td>
-                        <td className="border px-2 py-1">{stats.firstSeen}</td>
-                        <td className="border px-2 py-1">{stats.lastSeen}</td>
-                        <td className="border px-2 py-1">
-                          {stats.requestCount}
-                        </td>
-
-                        <td className="border px-2 py-1">
-                          {stats.dataTransferred}
-                        </td>
+                        <td className="border px-2 py-1">{log.ip}</td>
+                        <td className="border px-2 py-1">{log.time}</td>
+                        <td className="border px-2 py-1">{log.protocol}</td>
+                        <td className="border px-2 py-1">{log.length}</td>
+                        <td className="border px-2 py-1">{stats.requestCount}</td>
+                        <td className="border px-2 py-1">{stats.firstSeen.slice(10, 19 )}</td>
+                        <td className="border px-2 py-1">{stats.lastSeen.slice(10, 19)}</td>
                       </tr>
-                    )
-                  )}
-                </tbody>
-              </table>
-
-              <h3 className="text-lg font-semibold mb-2">Общая статистика</h3>
-              <table className="w-full text-sm border-collapse mb-4">
-                <thead>
-                  <tr>
-                    <th className="border px-2 py-1">Показатель</th>
-                    <th className="border px-2 py-1">Значение</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border px-2 py-1">
-                      Количество уникальных устройств
-                    </td>
-                    <td className="border px-2 py-1">
-                      {statistics.deviceStats.totalDevices}
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border px-2 py-1">
-                      Общий объем переданных данных
-                    </td>
-                    <td className="border px-2 py-1">
-                      {statistics.deviceStats.totalDataTransferred} байт
-                    </td>
-                  </tr>
+                    ));
+                  })}
                 </tbody>
               </table>
             </div>
-            <table className="w-full text-sm border-collapse mb-4">
-              <thead>
-                <tr>
-                  <th className="border px-2 py-1">Время</th>
-                  <th className="border px-2 py-1">IP-адрес</th>
-                  <th className="border px-2 py-1">Домен</th>
-                  <th className="border px-2 py-1">Протокол</th>
-                  <th className="border px-2 py-1">Длина</th>
-                </tr>
-              </thead>
-              <tbody>
-                {currentLogs.map((log, index) => (
-                  <tr key={index}>
-                    <td className="border px-2 py-1">{log.time}</td>
-                    <td className="border px-2 py-1">{log.ip}</td>
-                    <td className="border px-2 py-1">{log.domain}</td>
-                    <td className="border px-2 py-1">{log.protocol}</td>
-                    <td className="border px-2 py-1">{log.length}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
 
             {/* Пагинация */}
             <div className="flex justify-between items-center">
@@ -403,9 +352,9 @@ export default function AllData({ onStopCapture }) {
                 </button>
               </div>
             </div>
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

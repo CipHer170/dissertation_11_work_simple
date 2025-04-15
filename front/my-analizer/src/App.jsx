@@ -4,27 +4,30 @@ import AllData from "./components/AllData";
 import { useState } from "react";
 
 function App() {
-  const [showModal, setShowModal] = useState(true);
+  const [isCapturing, setIsCapturing] = useState(false);
 
   const handleStopCapture = async () => {
     try {
       const res = await fetch("http://localhost:5000/stop", {
         method: "POST",
       });
-      if (res.ok) setShowModal(true);
+      if (res.ok) setIsCapturing(false);
     } catch (err) {
       console.error("Ошибка остановки захвата:", err);
     }
   };
 
   return (
-    <>
-      {showModal ? (
-        <InterfaceSelector onStart={() => setShowModal(false)} />
-      ) : (
-        <AllData onStopCapture={handleStopCapture} />
+    <div className="container mx-auto p-4">
+      <div className="mb-4">
+        <InterfaceSelector onStart={() => setIsCapturing(true)} />
+      </div>
+      {isCapturing && (
+        <div className="mt-4">
+          <AllData onStopCapture={handleStopCapture} />
+        </div>
       )}
-    </>
+    </div>
   );
 }
 
