@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container bb mxauto p-4">
       <div className="mb-4">
         <InterfaceSelector onStart={() => setIsCapturing(true)} />
       </div>

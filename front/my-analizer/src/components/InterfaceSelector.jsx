@@ -34,14 +34,14 @@ export default function InterfaceSelector({ onStart }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow">
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-semibold">Сетевой интерфейс</h2>
-        <div className="flex gap-2">
+    <div className="">
+      <div className=" ">
+        <h2 className="text-center">Сетевой интерфейс</h2>
+        <div className="">
           {loading ? (
-            <p className="text-gray-500">Загрузка...</p>
+            <p className="">Загрузка...</p>
           ) : (
-            <div className="flex flex-wrap gap-2">
+            <div className="parent-list">
               {interfaces.map((intf, i) => (
                 <button
                   key={i}

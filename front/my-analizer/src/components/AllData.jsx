@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useMemo } from "react";
 import io from "socket.io-client";
+// Commenting out Chart.js imports
+/*
 import {
   Chart as ChartJS,
   ArcElement,
@@ -22,6 +24,7 @@ ChartJS.register(
   BarElement,
   Title
 );
+*/
 
 export default function AllData({ onStopCapture }) {
   const [logs, setLogs] = useState([]);
@@ -66,6 +69,8 @@ export default function AllData({ onStopCapture }) {
     };
   }, [logs]);
 
+  // Commenting out chart data preparation
+  /*
   // Prepare chart data
   const chartData = useMemo(() => {
     // Data for domain activity duration chart
@@ -169,6 +174,7 @@ export default function AllData({ onStopCapture }) {
       },
     },
   };
+  */
 
   useEffect(() => {
     // Загружаем старые логи при старте
@@ -240,22 +246,12 @@ export default function AllData({ onStopCapture }) {
         <p>Данные пока не поступают...</p>
       ) : (
         <>
-          {/* Interactive Charts */}
-          <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white p-4 rounded shadow">
-              <Pie data={chartData.domainActivityData} options={pieOptions} />
-            </div>
-            <div className="bg-white p-4 rounded shadow">
-              <Bar data={chartData.dataTransferData} options={barOptions} />
-            </div>
-          </div>
-
           {/* Combined Statistics and Logs Table */}
-          <div className="mb-6">
+          <div className="mb-6  all-data">
             <h3 className="text-lg font-semibold mb-2">
               Статистика и логи DNS трафика
             </h3>
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto table-data">
               <table className="w-full text-sm border-collapse mb-4">
                 <thead>
                   <tr className="bg-gray-100">
@@ -270,23 +266,40 @@ export default function AllData({ onStopCapture }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.entries(statistics.domainStats).map(([domain, stats]) => {
-                    // Find all logs for this domain
-                    const domainLogs = logs.filter(log => log.domain === domain);
-                    
-                    return domainLogs.map((log, index) => (
-                      <tr key={`${domain}-${index}`} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="border px-2 py-1">{domain}</td>
-                        <td className="border px-2 py-1">{log.ip}</td>
-                        <td className="border px-2 py-1">{log.time}</td>
-                        <td className="border px-2 py-1">{log.protocol}</td>
-                        <td className="border px-2 py-1">{log.length}</td>
-                        <td className="border px-2 py-1">{stats.requestCount}</td>
-                        <td className="border px-2 py-1">{stats.firstSeen.slice(10, 19 )}</td>
-                        <td className="border px-2 py-1">{stats.lastSeen.slice(10, 19)}</td>
-                      </tr>
-                    ));
-                  })}
+                  {Object.entries(statistics.domainStats).map(
+                    ([domain, stats]) => {
+                      // Find all logs for this domain
+                      const domainLogs = logs.filter(
+                        (log) => log.domain === domain
+                      );
+
+                      return domainLogs.map((log, index) => (
+                        <tr
+                          key={`${domain}-${index}`}
+                          className={
+                            index % 2 === 0 ? "bg-white" : "bg-gray-50"
+                          }
+                        >
+                          <td className="border px-2 py-1">{domain}</td>
+                          <td className="border px-2 py-1">{log.ip}</td>
+                          <td className="border px-2 py-1">
+                            {new Date(log.time).toLocaleDateString()}
+                          </td>
+                          <td className="border px-2 py-1">{log.protocol}</td>
+                          <td className="border px-2 py-1">{log.length}</td>
+                          <td className="border px-2 py-1">
+                            {stats.requestCount}
+                          </td>
+                          <td className="border px-2 py-1">
+                            {stats.firstSeen.slice(10, 19)}
+                          </td>
+                          <td className="border px-2 py-1">
+                            {stats.lastSeen.slice(10, 19)}
+                          </td>
+                        </tr>
+                      ));
+                    }
+                  )}
                 </tbody>
               </table>
             </div>
@@ -353,6 +366,15 @@ export default function AllData({ onStopCapture }) {
               </div>
             </div>
           </div>
+          {/* Commenting out Interactive Charts */}
+          {/* <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded shadow">
+              <Pie data={chartData.domainActivityData} options={pieOptions} />
+            </div>
+            <div className="bg-white p-4 rounded shadow">
+              <Bar data={chartData.dataTransferData} options={barOptions} />
+            </div>
+          </div> */}
         </>
       )}
     </div>

@@ -1,13 +1,10 @@
-.App {
-  max-width: 1280px;
-  margin: 0 auto;
-}
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  // display: flex;
+  // place-items: center;
+  // min-width: 320px;
+  // min-height: 100vh;
+  // border: 2px solid red;
 }
 
 h1 {
@@ -35,11 +32,16 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.App {
+  // max-width: 1280px;
+  // margin: 0 auto;
+}
 .interfaces {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: white;
   &__title {
     font-size: 2rem;
@@ -62,5 +64,31 @@ button:focus-visible {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.parent-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.all-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table-data {
+  display: flex;
+  border-radius: 16px;
+  background-color: white;
+  margin-top: 1rem;
+  td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
   }
 }
