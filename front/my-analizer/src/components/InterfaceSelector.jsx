@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function InterfaceSelector({ onStart, isCapturing, activeInterface }) {
+  const { t } = useLanguage();
   const [interfaces, setInterfaces] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -21,18 +23,18 @@ export default function InterfaceSelector({ onStart, isCapturing, activeInterfac
       setLoading(true);
       const res = await fetch("http://localhost:5000/interfaces");
       if (!res.ok) {
-        throw new Error("Ошибка загрузки интерфейсов");
+        throw new Error(t('messages.interfaceError'));
       }
       const data = await res.json();
       setInterfaces(data);
       setError(null);
     } catch (err) {
       console.error("Ошибка загрузки интерфейсов:", err);
-      setError("Не удалось загрузить список интерфейсов");
+      setError(t('messages.interfaceError'));
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [t]);
 
   const handleInterfaceSelect = useCallback(async (interfaceName) => {
     // If already scanning with this interface, do nothing
@@ -48,13 +50,13 @@ export default function InterfaceSelector({ onStart, isCapturing, activeInterfac
         });
         
         if (!res.ok) {
-          throw new Error("Ошибка остановки текущего захвата");
+          throw new Error(t('messages.errorStopCapture'));
         }
         
         setIsScanning(false);
       } catch (err) {
         console.error("Ошибка остановки захвата:", err);
-        setError("Ошибка остановки текущего захвата");
+        setError(t('messages.errorStopCapture'));
         return;
       }
     }
@@ -76,15 +78,15 @@ export default function InterfaceSelector({ onStart, isCapturing, activeInterfac
         onStart(interfaceName);
       } else {
         const data = await res.json();
-        setError(data.error || "Ошибка запуска захвата");
+        setError(data.error || t('messages.errorCapture'));
         setIsScanning(false);
       }
     } catch (err) {
       console.error("Ошибка запуска захвата:", err);
-      setError("Ошибка подключения к серверу");
+      setError(t('messages.errorCapture'));
       setIsScanning(false);
     }
-  }, [isScanning, activeInterface, onStart]);
+  }, [isScanning, activeInterface, onStart, t]);
 
   const handleStopScanning = useCallback(async () => {
     if (!isScanning) return;
@@ -99,13 +101,13 @@ export default function InterfaceSelector({ onStart, isCapturing, activeInterfac
         setError(null);
       } else {
         const data = await res.json();
-        setError(data.error || "Ошибка остановки захвата");
+        setError(data.error || t('messages.errorStopCapture'));
       }
     } catch (err) {
       console.error("Ошибка остановки захвата:", err);
-      setError("Ошибка подключения к серверу");
+      setError(t('messages.errorStopCapture'));
     }
-  }, [isScanning]);
+  }, [isScanning, t]);
 
   const handleRefreshInterfaces = useCallback(() => {
     fetchInterfaces();
@@ -121,16 +123,16 @@ export default function InterfaceSelector({ onStart, isCapturing, activeInterfac
         disabled={isScanning && activeInterface !== iface.name}
       >
         <div className="interface-name">{iface.name}</div>
-        <div className="interface-description">{iface.description || "Нет описания"}</div>
+        <div className="interface-description">{iface.description || t('messages.nodescription')}</div>
         {isScanning && activeInterface === iface.name && (
           <div className="interface-scanning-indicator">
             <span className="scanning-dot"></span>
-            <span>Сканирование</span>
+            <span>{t('messages.scanning')}</span>
           </div>
         )}
       </button>
     ));
-  }, [interfaces, activeInterface, isScanning, handleInterfaceSelect]);
+  }, [interfaces, activeInterface, isScanning, handleInterfaceSelect, t]);
 
   // Memoize the scanning status component
   const scanningStatus = useMemo(() => {
@@ -139,75 +141,68 @@ export default function InterfaceSelector({ onStart, isCapturing, activeInterfac
     return (
       <div className="scanning-status">
         <span className="scanning-indicator"></span>
-        <span>Сканирование активно</span>
+        <span>{t('messages.scanningActive')}</span>
         <button 
           onClick={handleStopScanning}
           className="button button-red"
         >
-          Остановить
+          {t('buttons.stop')}
         </button>
       </div>
     );
-  }, [isScanning, handleStopScanning]);
+  }, [isScanning, handleStopScanning, t]);
 
   // Memoize the stats cards
   const statsCards = useMemo(() => {
     return (
       <div className="stats-container">
         <div className="stat-card">
-          <div className="stat-title">Доступно интерфейсов</div>
+          <div className="stat-title">{t('headers.interface')}</div>
           <div className="stat-value">{interfaces.length}</div>
         </div>
         <div className="stat-card">
-          <div className="stat-title">Статус</div>
+          <div className="stat-title">{t('headers.status')}</div>
           <div className="stat-value">
-            {isScanning ? "Активно" : "Неактивно"}
+            {isScanning ? t('messages.active') : t('messages.inactive')}
           </div>
         </div>
       </div>
     );
-  }, [interfaces.length, isScanning]);
+  }, [interfaces.length, isScanning, t]);
+
+  if (loading) {
+    return <div className="loading">{t('messages.loadingInterfaces')}</div>;
+  }
+
+  if (error) {
+    return <div className="error">{error}</div>;
+  }
+
+  if (interfaces.length === 0) {
+    return <div className="no-data">{t('messages.noInterface')}</div>;
+  }
 
   return (
     <div>
       <div className="component-header">
-        <h2 className="component-title">Выбор сетевого интерфейса</h2>
+        <h2 className="component-title">{t('titles.interfaces')}</h2>
         <div className="component-actions">
           <button 
             onClick={handleRefreshInterfaces}
             className="button button-gray"
             disabled={loading}
           >
-            Обновить
+            {t('buttons.refresh')}
           </button>
           {scanningStatus}
         </div>
       </div>
 
-      {loading ? (
-        <div className="loading-container">
-          <div className="loading-spinner"></div>
-          <p className="loading">Загрузка интерфейсов...</p>
-        </div>
-      ) : (
-        <div>
-          {error && (
-            <div className="notification notification-yellow">
-              <p>{error}</p>
-            </div>
-          )}
+      {statsCards}
 
-          {statsCards}
-
-          <div className="interface-buttons">
-            {interfaceButtons}
-          </div>
-
-          {interfaces.length === 0 && (
-            <p className="empty-state">Интерфейсы не найдены</p>
-          )}
-        </div>
-      )}
+      <div className="interface-buttons">
+        {interfaceButtons}
+      </div>
     </div>
   );
 }

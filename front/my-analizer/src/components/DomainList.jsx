@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function DomainList({ selectedDomains, allDomains, onSelectionChange, onSaveSelection }) {
+  const { t } = useLanguage();
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [domains, setDomains] = useState([]);
@@ -98,11 +100,11 @@ export default function DomainList({ selectedDomains, allDomains, onSelectionCha
   return (
     <div>
       <div className="component-header">
-        <h2 className="component-title">Список доменов</h2>
+        <h2 className="component-title">{t('titles.domains')}</h2>
         <div className="component-actions">
           <input
             type="text"
-            placeholder="Поиск доменов..."
+            placeholder={t('messages.searchPlaceholder')}
             className="input"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -112,28 +114,28 @@ export default function DomainList({ selectedDomains, allDomains, onSelectionCha
             className="button button-blue"
           >
             {Object.values(selectedDomains).every(value => value) 
-              ? "Снять выделение" 
-              : "Выбрать все"}
+              ? t('buttons.deselectAll')
+              : t('buttons.selectAll')}
           </button>
           <button
             onClick={handleSaveSelection}
             className="button button-green"
           >
-            Сохранить выбор
+            {t('buttons.saveSelection')}
           </button>
         </div>
       </div>
 
       {loading ? (
-        <p className="loading">Загрузка доменов...</p>
+        <p className="loading">{t('messages.loading')}</p>
       ) : (
         <div className="table-container">
           <table className="table">
             <thead>
               <tr>
                 <th className="w-10">#</th>
-                <th className="w-10">Выбрать</th>
-                <th>Домен</th>
+                <th className="w-10">{t('headers.select')}</th>
+                <th>{t('headers.domain')}</th>
               </tr>
             </thead>
             <tbody>
@@ -155,11 +157,11 @@ export default function DomainList({ selectedDomains, allDomains, onSelectionCha
           </table>
           
           {filteredDomains.length === 0 && (
-            <p className="empty-state">Домены не найдены</p>
+            <p className="empty-state">{t('messages.noDomainsFound')}</p>
           )}
           
           <div className="pagination-info">
-            Выбрано: {Object.values(selectedDomains).filter(Boolean).length} из {domains.length} доменов
+            {t('messages.selected')}: {Object.values(selectedDomains).filter(Boolean).length} {t('messages.of')} {domains.length} {t('messages.domains')}
           </div>
         </div>
       )}

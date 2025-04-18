@@ -3,8 +3,20 @@ import InterfaceSelector from "./components/InterfaceSelector";
 import AllData from "./components/AllData";
 import DomainList from "./components/DomainList";
 import { useState, useEffect, useCallback, useMemo } from "react";
+import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
 
+// Main App component wrapper
 function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
+  );
+}
+
+// Main content component
+function AppContent() {
+  const { t, currentLang, changeLanguage } = useLanguage();
   const [isCapturing, setIsCapturing] = useState(false);
   const [currentPage, setCurrentPage] = useState("interface"); // "interface", "domains"
   const [selectedDomains, setSelectedDomains] = useState({});
@@ -134,6 +146,9 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* Language Selector */}
+ 
+
       {/* Notification */}
       {notification && (
         <div className={`notification notification-${notification.type}`}>
@@ -148,15 +163,28 @@ function App() {
             onClick={() => setCurrentPage("interface")}
             className={`nav-button ${currentPage === "interface" ? "nav-button-active" : "nav-button-inactive"}`}
           >
-            Интерфейсы и данные
+            {t('titles.interfaces')}
           </button>
           <button
             onClick={() => setCurrentPage("domains")}
             className={`nav-button ${currentPage === "domains" ? "nav-button-active" : "nav-button-inactive"}`}
           >
-            Список доменов
+            {t('titles.domains')}
           </button>
         </div>
+
+        <div className="language-selector">
+        <select
+          value={currentLang}
+          onChange={(e) => changeLanguage(e.target.value)}
+          className="language-select"
+        >
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+          <option value="kk">Қарақалпақ</option>
+          <option value="uz">O'zbek</option>
+        </select>
+      </div>
       </div>
 
       {/* Page Content */}
