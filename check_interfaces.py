@@ -36,6 +36,35 @@ def get_logs():
     with log_lock:
         return jsonify(logs)
 
+# Export all DNS logs as CSV
+@app.route("/export")
+def export_logs():
+    import csv
+    from flask import Response
+    with log_lock:
+        export_logs = list(logs)
+    if not export_logs:
+        return Response('No data to export', mimetype='text/plain')
+    headers = export_logs[0].keys()
+    def generate():
+        import io
+        output = io.StringIO()
+        # Write UTF-8 BOM for Excel/Unicode compatibility
+        yield '\ufeff'
+        writer = csv.DictWriter(output, fieldnames=headers)
+        writer.writeheader()
+        yield output.getvalue()
+        output.seek(0)
+        output.truncate(0)
+        for row in export_logs:
+            writer.writerow(row)
+            yield output.getvalue()
+            output.seek(0)
+            output.truncate(0)
+    return Response(generate(), mimetype='text/csv', headers={
+        'Content-Disposition': 'attachment; filename="dns_logs.csv"'
+    })
+
 # Stop traffic capture
 @app.route("/stop", methods=["POST"])
 def stop_capture():
@@ -122,11 +151,20 @@ def capture_dns(interface):
         sniff(filter="udp port 53", iface=interface, prn=process_packet, 
               store=0, stop_filter=lambda p: stop_event.is_set())
     except Exception as e:
-        app.logger.error(f"Error starting capture: {e}")
+        import traceback
+        app.logger.error(f"Error starting capture: {e}\n{traceback.format_exc()}")
     finally:
         global capturing
         capturing = False
         app.logger.info("Capture stopped")
+        # Optionally: auto-restart if not stopped intentionally
+        if not stop_event.is_set():
+            app.logger.warning("Sniffer died unexpectedly. Auto-restarting...")
+            # Restart the sniffer thread after a short delay
+            time.sleep(2)
+            global sniffer_thread
+            sniffer_thread = threading.Thread(target=capture_dns, args=(interface,), daemon=True)
+            sniffer_thread.start()
 
 # Graceful shutdown handler
 def shutdown_server(signal, frame):
@@ -141,6 +179,14 @@ def shutdown_server(signal, frame):
 # Register signal handlers
 signal.signal(signal.SIGINT, shutdown_server)
 signal.signal(signal.SIGTERM, shutdown_server)
+
+# Sniffer health check endpoint
+@app.route("/sniffer_status")
+def sniffer_status():
+    global sniffer_thread
+    if sniffer_thread is not None:
+        return jsonify({"alive": sniffer_thread.is_alive()})
+    return jsonify({"alive": False})
 
 # Run the application
 if __name__ == "__main__":

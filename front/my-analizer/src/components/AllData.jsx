@@ -455,7 +455,7 @@ export default function AllData({ selectedDomains }) {
         ].join(',');
       });
 
-      const csvContent = [headers, ...csvRows].join('\n');
+      const csvContent = `\uFEFF`+[headers, ...csvRows].join('\n');
       const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
@@ -465,7 +465,25 @@ export default function AllData({ selectedDomains }) {
       console.error('Error exporting to CSV:', error);
     }
   }, [currentDomains, t]);
-
+// exporting all scanned data
+  const exportAllToCSV = useCallback(async () => {
+    try {
+      const response = await fetch('http://localhost:5000/export');
+      if (!response.ok) throw new Error('Failed to fetch CSV');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `dns_traffic_logs_${new Date().toISOString().slice(0, 10)}.csv`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error exporting all data to CSV:', error);
+    }
+  }, []);
+  
   const exportToJSON = useCallback(() => {
     try {
       const jsonData = currentDomains.map(domainData => ({
@@ -515,6 +533,9 @@ export default function AllData({ selectedDomains }) {
       <th>{t('table.lastSeen')}</th>
     </tr>
   );
+
+
+
 
   // Update stats cards
   const statsCards = (
@@ -632,6 +653,7 @@ export default function AllData({ selectedDomains }) {
             >
               {t('buttons.exportJson')}
             </button>
+          
           </div>
         </div>
       </div>
@@ -688,9 +710,14 @@ export default function AllData({ selectedDomains }) {
                 ))}
               </tbody>
             </table>
+            <div className="extra-info">
 
             {/* IP Legend */}
             {IpLegend}
+            <button onClick={exportAllToCSV} className="button button-green">
+  Export All Data (CSV)
+</button>
+            </div>
           </div>
 
           {/* Pagination */}
