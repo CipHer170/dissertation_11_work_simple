@@ -466,24 +466,34 @@ export default function AllData({ selectedDomains }) {
     }
   }, [currentDomains, t]);
 // exporting all scanned data
-  const exportAllToCSV = useCallback(async () => {
-    try {
-      const response = await fetch('http://localhost:5000/export');
-      if (!response.ok) throw new Error('Failed to fetch CSV');
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `dns_traffic_logs_${new Date().toISOString().slice(0, 10)}.csv`;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error('Error exporting all data to CSV:', error);
-    }
-  }, []);
-  
+function exportAllToCSV() {
+  // Use the logs you want to export (all, filtered, or shown on screen)
+  const dataToExport = logs; // or use ipFilteredLogs if you want only filtered
+
+  if (!dataToExport.length) {
+    alert("Нет данных для экспорта!");
+    return;
+  }
+
+  const csvHeaders = Object.keys(dataToExport[0]);
+  const csvRows = [
+    csvHeaders.join(","), // header row
+    ...dataToExport.map(row =>
+      csvHeaders.map(field => 
+        `"${(row[field] ?? '').toString().replace(/"/g, '""')}"`
+      ).join(",")
+    )
+  ];
+
+  const csvContent = csvRows.join("\n");
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.setAttribute("download", "all_data.csv");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
   const exportToJSON = useCallback(() => {
     try {
       const jsonData = currentDomains.map(domainData => ({

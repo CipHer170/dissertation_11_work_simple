@@ -1,6 +1,6 @@
 # Ignore node_modules folder
 node_modules/
-
+network_logs/
 # Ignore log files
 *.log
 npm-debug.log*
