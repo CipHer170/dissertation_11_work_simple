@@ -1,0 +1,5692 @@
+{
+  "logs": [
+    {
+      "ip": "192.168.80.114",
+      "domain": "spo-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:12:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "spo-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 304,
+      "time": "2025-05-02 07:12:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "b-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:12:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "b-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 212,
+      "time": "2025-05-02 07:12:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ow1.res.office365.com",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:12:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ow1.res.office365.com",
+      "protocol": "UDP",
+      "length": 521,
+      "time": "2025-05-02 07:12:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "s8.uk.to",
+      "protocol": "UDP",
+      "length": 68,
+      "time": "2025-05-02 07:12:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "s8.uk.to",
+      "protocol": "UDP",
+      "length": 166,
+      "time": "2025-05-02 07:12:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:12:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:12:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:12:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:12:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 183,
+      "time": "2025-05-02 07:12:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:12:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 183,
+      "time": "2025-05-02 07:12:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:12:53",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:12:53",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:12:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:12:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:12:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:12:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:13:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:13:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:13:09",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 233,
+      "time": "2025-05-02 07:13:09",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:13:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:13:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:13:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:13:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 532,
+      "time": "2025-05-02 07:13:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 532,
+      "time": "2025-05-02 07:13:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 153,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "easylist-downloads.adblockplus.org",
+      "protocol": "UDP",
+      "length": 153,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 407,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 407,
+      "time": "2025-05-02 07:13:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 327,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 327,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:13:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 293,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 293,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 293,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 293,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 350,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 350,
+      "time": "2025-05-02 07:13:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 256,
+      "time": "2025-05-02 07:13:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 256,
+      "time": "2025-05-02 07:13:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:13:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:13:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 364,
+      "time": "2025-05-02 07:13:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 364,
+      "time": "2025-05-02 07:13:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:13:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 372,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 372,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 376,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 376,
+      "time": "2025-05-02 07:13:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:13:39",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:13:39",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:13:39",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:13:39",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:13:45",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:13:45",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 388,
+      "time": "2025-05-02 07:13:45",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 388,
+      "time": "2025-05-02 07:13:45",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:54",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:54",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 389,
+      "time": "2025-05-02 07:13:54",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 389,
+      "time": "2025-05-02 07:13:54",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:13:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "inference.codeium.com",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:14:23",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "inference.codeium.com",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:14:23",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "inference.codeium.com",
+      "protocol": "UDP",
+      "length": 391,
+      "time": "2025-05-02 07:14:23",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "inference.codeium.com",
+      "protocol": "UDP",
+      "length": 391,
+      "time": "2025-05-02 07:14:23",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "settings-win.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 91,
+      "time": "2025-05-02 07:14:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "settings-win.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 91,
+      "time": "2025-05-02 07:14:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "settings-win.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 529,
+      "time": "2025-05-02 07:14:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "settings-win.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 529,
+      "time": "2025-05-02 07:14:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:14:49",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:14:49",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:14:49",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:14:49",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 400,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 400,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:15:03",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ctldl.windowsupdate.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:15:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ctldl.windowsupdate.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:15:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ctldl.windowsupdate.com",
+      "protocol": "UDP",
+      "length": 371,
+      "time": "2025-05-02 07:15:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ctldl.windowsupdate.com",
+      "protocol": "UDP",
+      "length": 371,
+      "time": "2025-05-02 07:15:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:15:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:15:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 422,
+      "time": "2025-05-02 07:15:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 422,
+      "time": "2025-05-02 07:15:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "api.iterable.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "api.iterable.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "api.iterable.com",
+      "protocol": "UDP",
+      "length": 373,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "api.iterable.com",
+      "protocol": "UDP",
+      "length": 373,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:15:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:15:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:15:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:15:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 218,
+      "time": "2025-05-02 07:15:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:15:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 218,
+      "time": "2025-05-02 07:15:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 260,
+      "time": "2025-05-02 07:15:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 260,
+      "time": "2025-05-02 07:15:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "data-ai.microsoft.com",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:15:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "data-ai.microsoft.com",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:15:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "data-ai.microsoft.com",
+      "protocol": "UDP",
+      "length": 341,
+      "time": "2025-05-02 07:15:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "data-ai.microsoft.com",
+      "protocol": "UDP",
+      "length": 341,
+      "time": "2025-05-02 07:15:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:15:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:15:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:15:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:15:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:15:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:15:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 305,
+      "time": "2025-05-02 07:15:38",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:15:56",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:15:56",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 389,
+      "time": "2025-05-02 07:15:56",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 389,
+      "time": "2025-05-02 07:15:56",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:15:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:15:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:15:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:15:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:15:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:15:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:16:05",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:16:05",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:16:05",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:16:05",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:16:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:16:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:16:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:16:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 348,
+      "time": "2025-05-02 07:16:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 348,
+      "time": "2025-05-02 07:16:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "graph.microsoft.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "graph.microsoft.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "graph.microsoft.com",
+      "protocol": "UDP",
+      "length": 325,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "graph.microsoft.com",
+      "protocol": "UDP",
+      "length": 325,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "c.pki.goog",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "c.pki.goog",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "c.pki.goog",
+      "protocol": "UDP",
+      "length": 369,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "c.pki.goog",
+      "protocol": "UDP",
+      "length": 369,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "substrate.office.com",
+      "protocol": "UDP",
+      "length": 80,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "substrate.office.com",
+      "protocol": "UDP",
+      "length": 80,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 553,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 553,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "substrate.office.com",
+      "protocol": "UDP",
+      "length": 358,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "substrate.office.com",
+      "protocol": "UDP",
+      "length": 358,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "x1.c.lencr.org",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "x1.c.lencr.org",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "x1.c.lencr.org",
+      "protocol": "UDP",
+      "length": 503,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "x1.c.lencr.org",
+      "protocol": "UDP",
+      "length": 503,
+      "time": "2025-05-02 07:16:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 343,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 343,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 72,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 343,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 343,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 254,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bing.com",
+      "protocol": "UDP",
+      "length": 254,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 94,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 484,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 484,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 234,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "prod.rewardsplatform.microsoft.com",
+      "protocol": "UDP",
+      "length": 234,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 193,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 193,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 314,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 314,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 462,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 462,
+      "time": "2025-05-02 07:16:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 71,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 71,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 71,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 71,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 548,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 548,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 546,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 546,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 247,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "r.bing.com",
+      "protocol": "UDP",
+      "length": 247,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 249,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "th.bing.com",
+      "protocol": "UDP",
+      "length": 249,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 348,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 348,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 324,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "xpaywalletcdn-prod.azureedge.net",
+      "protocol": "UDP",
+      "length": 324,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 509,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 509,
+      "time": "2025-05-02 07:16:14",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 477,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "bai.qingcaila.top",
+      "protocol": "UDP",
+      "length": 477,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 469,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 469,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "storage.live.com",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "c205404da4b4529b7485180129c4b6f1.clo.footprintdns.com",
+      "protocol": "UDP",
+      "length": 113,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "c205404da4b4529b7485180129c4b6f1.clo.footprintdns.com",
+      "protocol": "UDP",
+      "length": 113,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 89,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 89,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 89,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 89,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 295,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 295,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 271,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "cdn.sapphire.microsoftapp.net",
+      "protocol": "UDP",
+      "length": 271,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "c205404da4b4529b7485180129c4b6f1.clo.footprintdns.com",
+      "protocol": "UDP",
+      "length": 497,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "c205404da4b4529b7485180129c4b6f1.clo.footprintdns.com",
+      "protocol": "UDP",
+      "length": 497,
+      "time": "2025-05-02 07:16:15",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 126,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 126,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 126,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 373,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 126,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 373,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 280,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+      "protocol": "UDP",
+      "length": 280,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 74,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 387,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 387,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 282,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "login.live.com",
+      "protocol": "UDP",
+      "length": 282,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "t-ring-fdv2.msedge.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "t-ring-fdv2.msedge.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:16:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 224,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 224,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 197,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.bingapis.com",
+      "protocol": "UDP",
+      "length": 197,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "t-ring-fdv2.msedge.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "t-ring-fdv2.msedge.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:16:17",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "t-ring-fdv2.msedge.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "t-ring-fdv2.msedge.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "t-ring-fallback.msedge.net",
+      "protocol": "UDP",
+      "length": 86,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "t-ring-fallback.msedge.net",
+      "protocol": "UDP",
+      "length": 86,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "t-ring-fallback.msedge.net",
+      "protocol": "UDP",
+      "length": 224,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "t-ring-fallback.msedge.net",
+      "protocol": "UDP",
+      "length": 224,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "fp.msedge.net",
+      "protocol": "UDP",
+      "length": 73,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "fp.msedge.net",
+      "protocol": "UDP",
+      "length": 73,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "fp.msedge.net",
+      "protocol": "UDP",
+      "length": 273,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "fp.msedge.net",
+      "protocol": "UDP",
+      "length": 273,
+      "time": "2025-05-02 07:16:18",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "teams-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "teams-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 81,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "teams-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 228,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "teams-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 228,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "bx-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "bx-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "bx-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 300,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "bx-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 300,
+      "time": "2025-05-02 07:16:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mcr-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:16:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mcr-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:16:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mcr-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 304,
+      "time": "2025-05-02 07:16:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mcr-ring.msedge.net",
+      "protocol": "UDP",
+      "length": 304,
+      "time": "2025-05-02 07:16:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "auth.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "auth.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "auth.grammarly.com",
+      "protocol": "UDP",
+      "length": 326,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "auth.grammarly.com",
+      "protocol": "UDP",
+      "length": 326,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:16:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "treatment.grammarly.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:16:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "treatment.grammarly.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:16:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:16:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "treatment.grammarly.com",
+      "protocol": "UDP",
+      "length": 446,
+      "time": "2025-05-02 07:16:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "treatment.grammarly.com",
+      "protocol": "UDP",
+      "length": 446,
+      "time": "2025-05-02 07:16:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 375,
+      "time": "2025-05-02 07:16:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 375,
+      "time": "2025-05-02 07:16:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "gates.grammarly.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:16:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "gates.grammarly.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:16:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "gates.grammarly.com",
+      "protocol": "UDP",
+      "length": 360,
+      "time": "2025-05-02 07:16:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "gates.grammarly.com",
+      "protocol": "UDP",
+      "length": 360,
+      "time": "2025-05-02 07:16:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "goldengate.grammarly.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "goldengate.grammarly.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "goldengate.grammarly.com",
+      "protocol": "UDP",
+      "length": 349,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "goldengate.grammarly.com",
+      "protocol": "UDP",
+      "length": 349,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "properties.grammarly.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "properties.grammarly.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "f-log-win-extension.grammarly.io",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "f-log-win-extension.grammarly.io",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "properties.grammarly.com",
+      "protocol": "UDP",
+      "length": 365,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "properties.grammarly.com",
+      "protocol": "UDP",
+      "length": 365,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "f-log-win-extension.grammarly.io",
+      "protocol": "UDP",
+      "length": 408,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "f-log-win-extension.grammarly.io",
+      "protocol": "UDP",
+      "length": 408,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "activity.windows.com",
+      "protocol": "UDP",
+      "length": 80,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "activity.windows.com",
+      "protocol": "UDP",
+      "length": 80,
+      "time": "2025-05-02 07:16:33",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "activity.windows.com",
+      "protocol": "UDP",
+      "length": 256,
+      "time": "2025-05-02 07:16:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "activity.windows.com",
+      "protocol": "UDP",
+      "length": 256,
+      "time": "2025-05-02 07:16:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:40",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:16:40",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:16:40",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:16:40",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "github.com",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:17:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "github.com",
+      "protocol": "UDP",
+      "length": 70,
+      "time": "2025-05-02 07:17:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "github.com",
+      "protocol": "UDP",
+      "length": 517,
+      "time": "2025-05-02 07:17:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "github.com",
+      "protocol": "UDP",
+      "length": 517,
+      "time": "2025-05-02 07:17:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:17:01",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:17:01",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 152,
+      "time": "2025-05-02 07:17:01",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 152,
+      "time": "2025-05-02 07:17:01",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:17:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:17:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 422,
+      "time": "2025-05-02 07:17:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 422,
+      "time": "2025-05-02 07:17:13",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 218,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 218,
+      "time": "2025-05-02 07:17:16",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 257,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 257,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 269,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 269,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:17:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:27",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:17:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "__hola__.pac_get_init_ts.local.hola",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:34",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 183,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 183,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 82,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 183,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "az764295.vo.msecnd.net",
+      "protocol": "UDP",
+      "length": 183,
+      "time": "2025-05-02 07:17:47",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 169,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "unleash.codeium.com",
+      "protocol": "UDP",
+      "length": 95,
+      "time": "2025-05-02 07:17:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 106,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 106,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 326,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 326,
+      "time": "2025-05-02 07:17:59",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:00",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:02",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:02",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:02",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:02",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 419,
+      "time": "2025-05-02 07:18:02",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 419,
+      "time": "2025-05-02 07:18:02",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 215,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 215,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 257,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 257,
+      "time": "2025-05-02 07:18:04",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:06",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:18:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:18:07",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:18:23",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:18:23",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:18:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:18:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "westus-0.in.applicationinsights.azure.com",
+      "protocol": "UDP",
+      "length": 101,
+      "time": "2025-05-02 07:18:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "westus-0.in.applicationinsights.azure.com",
+      "protocol": "UDP",
+      "length": 101,
+      "time": "2025-05-02 07:18:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "westus-0.in.applicationinsights.azure.com",
+      "protocol": "UDP",
+      "length": 342,
+      "time": "2025-05-02 07:18:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "westus-0.in.applicationinsights.azure.com",
+      "protocol": "UDP",
+      "length": 342,
+      "time": "2025-05-02 07:18:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "v10.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 89,
+      "time": "2025-05-02 07:18:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "v10.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 89,
+      "time": "2025-05-02 07:18:25",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "v10.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 436,
+      "time": "2025-05-02 07:18:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "v10.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 436,
+      "time": "2025-05-02 07:18:26",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:18:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:18:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:18:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 79,
+      "time": "2025-05-02 07:18:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 293,
+      "time": "2025-05-02 07:18:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 293,
+      "time": "2025-05-02 07:18:28",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:18:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "main.vscode-cdn.net",
+      "protocol": "UDP",
+      "length": 317,
+      "time": "2025-05-02 07:18:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:18:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 152,
+      "time": "2025-05-02 07:18:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 152,
+      "time": "2025-05-02 07:18:29",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 364,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 364,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 327,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 327,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 479,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 479,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 278,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 278,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 327,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "vscode-sync.trafficmanager.net",
+      "protocol": "UDP",
+      "length": 327,
+      "time": "2025-05-02 07:18:30",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:35",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:18:35",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:35",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 83,
+      "time": "2025-05-02 07:18:35",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:35",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:35",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 535,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 84,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:51",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftconnecttest.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:18:51",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:51",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:18:51",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 519,
+      "time": "2025-05-02 07:18:51",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 519,
+      "time": "2025-05-02 07:18:51",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 104,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 104,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 214,
+      "time": "2025-05-02 07:19:11",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 92,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 256,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 256,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 519,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "mobile.events.data.microsoft.com",
+      "protocol": "UDP",
+      "length": 519,
+      "time": "2025-05-02 07:19:12",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 375,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "capi.grammarly.com",
+      "protocol": "UDP",
+      "length": 375,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:19:24",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 173,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 88,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "applet-bundles.grammarly.net",
+      "protocol": "UDP",
+      "length": 321,
+      "time": "2025-05-02 07:19:31",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 400,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 400,
+      "time": "2025-05-02 07:19:32",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:19:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 96,
+      "time": "2025-05-02 07:19:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 364,
+      "time": "2025-05-02 07:19:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "win-extension.femetrics.grammarly.io",
+      "protocol": "UDP",
+      "length": 364,
+      "time": "2025-05-02 07:19:37",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 104,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 104,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:19:46",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:19:58",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:19:58",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:19:58",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:19:58",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 388,
+      "time": "2025-05-02 07:19:58",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "server.codeium.com",
+      "protocol": "UDP",
+      "length": 388,
+      "time": "2025-05-02 07:19:58",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "www.msftncsi.com",
+      "protocol": "UDP",
+      "length": 490,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 77,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:20:22",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "ipv6.msftncsi.com",
+      "protocol": "UDP",
+      "length": 156,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 90,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 106,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 106,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "windsurf-telemetry.codeium.com",
+      "protocol": "UDP",
+      "length": 180,
+      "time": "2025-05-02 07:20:36",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:20:52",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:20:52",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 372,
+      "time": "2025-05-02 07:20:52",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "in.grammarly.com",
+      "protocol": "UDP",
+      "length": 372,
+      "time": "2025-05-02 07:20:52",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:20:53",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 78,
+      "time": "2025-05-02 07:20:53",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 376,
+      "time": "2025-05-02 07:20:53",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "gnar.grammarly.com",
+      "protocol": "UDP",
+      "length": 376,
+      "time": "2025-05-02 07:20:53",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:20:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.114",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 76,
+      "time": "2025-05-02 07:20:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 104,
+      "time": "2025-05-02 07:20:57",
+      "type": "dns"
+    },
+    {
+      "ip": "192.168.80.137",
+      "domain": "dns.msftncsi.com",
+      "protocol": "UDP",
+      "length": 104,
+      "time": "2025-05-02 07:20:57",
+      "type": "dns"
+    }
+  ],
+  "interface_stats": {
+    "Wi-Fi": {
+      "total_packets": 702,
+      "dns_requests": 0,
+      "unique_domains": [
+        "goldengate.grammarly.com",
+        "ctldl.windowsupdate.com",
+        "auth.grammarly.com",
+        "properties.grammarly.com",
+        "dns.msftncsi.com",
+        "mobile.events.data.microsoft.com",
+        "cdn.sapphire.microsoftapp.net",
+        "www.bing.com",
+        "settings-win.data.microsoft.com",
+        "aks-prod-westeurope.access-point.cloudmessaging.edge.microsoft.com",
+        "prod.rewardsplatform.microsoft.com",
+        "c.pki.goog",
+        "xpaywalletcdn-prod.azureedge.net",
+        "spo-ring.msedge.net",
+        "vscode-sync.trafficmanager.net",
+        "login.live.com",
+        "bai.qingcaila.top",
+        "unleash.codeium.com",
+        "applet-bundles.grammarly.net",
+        "ipv6.msftconnecttest.com",
+        "ipv6.msftncsi.com",
+        "gates.grammarly.com",
+        "__hola__.pac_get_init_ts.local.hola",
+        "windsurf-telemetry.codeium.com",
+        "b-ring.msedge.net",
+        "f-log-win-extension.grammarly.io",
+        "data-ai.microsoft.com",
+        "fp.msedge.net",
+        "activity.windows.com",
+        "www.msftncsi.com",
+        "in.grammarly.com",
+        "api.iterable.com",
+        "storage.live.com",
+        "www.msftconnecttest.com",
+        "r.bing.com",
+        "inference.codeium.com",
+        "teams-ring.msedge.net",
+        "x1.c.lencr.org",
+        "westus-0.in.applicationinsights.azure.com",
+        "win-extension.femetrics.grammarly.io",
+        "easylist-downloads.adblockplus.org",
+        "t-ring-fdv2.msedge.net",
+        "mcr-ring.msedge.net",
+        "capi.grammarly.com",
+        "th.bing.com",
+        "edge.microsoft.com",
+        "graph.microsoft.com",
+        "az764295.vo.msecnd.net",
+        "s8.uk.to",
+        "c205404da4b4529b7485180129c4b6f1.clo.footprintdns.com",
+        "main.vscode-cdn.net",
+        "github.com",
+        "t-ring-fallback.msedge.net",
+        "gnar.grammarly.com",
+        "substrate.office.com",
+        "www.bingapis.com",
+        "v10.events.data.microsoft.com",
+        "ow1.res.office365.com",
+        "treatment.grammarly.com",
+        "bx-ring.msedge.net",
+        "server.codeium.com"
+      ],
+      "unique_ips": [
+        "192.168.80.137",
+        "192.168.80.114"
+      ],
+      "traffic_volume": 134182,
+      "start_time": 

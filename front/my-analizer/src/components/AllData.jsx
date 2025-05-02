@@ -541,13 +541,13 @@ export default function AllData({ selectedDomains }) {
   const statsCards = (
     <div className="stats-container">
       <div className="stat-card">
-        <div className="stat-title">{t('messages.totalDevices')}</div>
+        <div className="stat-title">{t('messages.totalRequests')}</div>
         <div className="stat-value">
           {Object.keys(statistics.domainStats).length}
         </div>
       </div>
       <div className="stat-card">
-        <div className="stat-title">{t('messages.totalRequests')}</div>
+        <div className="stat-title">{t('messages.totalDevices')}</div>
         <div className="stat-value">
           {statistics.deviceStats.totalDevices}
         </div>
