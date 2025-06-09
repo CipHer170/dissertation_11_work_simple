@@ -4,6 +4,7 @@ import AllData from "./components/AllData";
 import DomainList from "./components/DomainList";
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
+import DeviceStats from './components/DeviceStats';
 
 // Main App component wrapper
 function App() {
@@ -150,9 +151,6 @@ function AppContent() {
 
   return (
     <div className="app-container">
-      {/* Language Selector */}
- 
-
       {/* Notification */}
       {notification && (
         <div className={`notification notification-${notification.type}`}>
@@ -178,21 +176,26 @@ function AppContent() {
         </div>
 
         <div className="language-selector">
-        <select
-          value={currentLang}
-          onChange={(e) => changeLanguage(e.target.value)}
-          className="language-select"
-        >
-          <option value="en">English</option>
-          <option value="ru">Русский</option>
-          <option value="kk">Қарақалпақ</option>
-          <option value="uz">O'zbek</option>
-        </select>
+          <select
+            value={currentLang}
+            onChange={(e) => changeLanguage(e.target.value)}
+            className="language-select"
+          >
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="uz">O'zbek</option>
+            <option value="kk">Қазақ</option>
+          </select>
+        </div>
       </div>
-      </div>
-
+      
       {/* Page Content */}
-      {pageContent}
+      <div className="content-wrapper">
+        <div className="left-panel">
+          {pageContent}
+      {/* <DeviceStats /> */}
+        </div>
+      </div>
     </div>
   );
 }

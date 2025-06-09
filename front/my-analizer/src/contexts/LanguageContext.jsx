@@ -156,6 +156,18 @@ const translations = {
       uniqueIPs: "List of unique IP addresses",
       selectIP: "Click to show only this IP's data",
       deselectIP: "Click to show all data"
+    },
+    statistics: {
+      deviceTraffic: 'Device Traffic Analysis',
+      totalDataReceived: 'Total Data Received',
+      totalDataSent: 'Total Data Sent',
+      packetsReceived: 'Packets Received',
+      packetsSent: 'Packets Sent',
+      activeConnections: 'Active Connections',
+      firstSeen: 'First Seen',
+      lastSeen: 'Last Seen',
+      protocolUsage: 'Protocol Usage',
+      protocolDistribution: 'Protocol Distribution'
     }
   },
   ru: {
@@ -312,6 +324,18 @@ const translations = {
       uniqueIPs: "Список уникальных IP-адресов",
       selectIP: "Нажмите, чтобы показать данные только этого IP",
       deselectIP: "Нажмите, чтобы показать все данные"
+    },
+    statistics: {
+      deviceTraffic: 'Анализ трафика устройств',
+      totalDataReceived: 'Всего получено данных',
+      totalDataSent: 'Всего отправлено данных',
+      packetsReceived: 'Получено пакетов',
+      packetsSent: 'Отправлено пакетов',
+      activeConnections: 'Активные соединения',
+      firstSeen: 'Первый раз замечено',
+      lastSeen: 'Последний раз замечено',
+      protocolUsage: 'Использование протоколов',
+      protocolDistribution: 'Распределение протоколов'
     }
   },
   kk: {
@@ -468,6 +492,18 @@ const translations = {
       uniqueIPs: "Бірегей IP мекенжайлар тізімі",
       selectIP: "Тек осы IP деректерін көрсету үшін басыңыз",
       deselectIP: "Барлық деректерді көрсету үшін басыңыз"
+    },
+    statistics: {
+      deviceTraffic: 'Құрылғылар желісін талдау',
+      totalDataReceived: 'Жалпы қабылданған деректер',
+      totalDataSent: 'Жалпы жіберілген деректер',
+      packetsReceived: 'Қабылданған пакеттер',
+      packetsSent: 'Жіберілген пакеттер',
+      activeConnections: 'Белсенді қосылымдар',
+      firstSeen: 'Алғаш рет көрілген',
+      lastSeen: 'Соңғы рет көрілген',
+      protocolUsage: 'Хаттамаларды қолдану',
+      protocolDistribution: 'Хаттамаларды бөлу'
     }
   },
   uz: {
@@ -551,7 +587,7 @@ const translations = {
       success: {
         saved: 'Tanlov muvaffaqiyatli saqlandi',
         started: 'Yakunlash muvaffaqiyatli boshlandi',
-        stopped: 'Yakunlash muvaffaqiyatli to\'xtatildi',
+        stopped: 'Yakunlash muvaffaqiyatli tўxtatildi',
         updated: 'Ma\'lumotlar muvaffaqiyatli yangilandi'
       },
       error: {
@@ -624,6 +660,18 @@ const translations = {
       uniqueIPs: "Nozik IP manzillar ro'yxati",
       selectIP: "Faqat bu IP ma'lumotlarini ko'rsatish uchun bosing",
       deselectIP: "Barcha ma'lumotlarni ko'rsatish uchun bosing"
+    },
+    statistics: {
+      deviceTraffic: 'Qurilmalar tarmog\'i tahlili',
+      totalDataReceived: 'Jami qabul qilingan ma\'lumot',
+      totalDataSent: 'Jami yuborilgan ma\'lumot',
+      packetsReceived: 'Qabul qilingan paketlar',
+      packetsSent: 'Yuborilgan paketlar',
+      activeConnections: 'Faol ulanishlar',
+      firstSeen: 'Birinchi marta ko\'rilgan',
+      lastSeen: 'Oxirgi marta ko\'rilgan',
+      protocolUsage: 'Protokollardan foydalanish',
+      protocolDistribution: 'Protokollar taqsimoti'
     }
   }
 };

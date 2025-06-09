@@ -948,3 +948,23 @@ button[title] {
     white-space: nowrap;
   }
 }
+
+.content-wrapper {
+  display: flex;
+  padding: 20px;
+  height: calc(100vh - 60px); // Subtract header height
+  overflow: hidden;
+
+  .left-panel {
+    flex: 1;
+    overflow-y: auto;
+  }
+}
+
+.device-stats-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

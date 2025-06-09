@@ -258,6 +258,93 @@ def sniffer_status():
     }
     return jsonify(status)
 
+# ============================================================================
+# DEVICE TRAFFIC ANALYSIS
+# ============================================================================
+class DeviceStats:
+    def __init__(self):
+        self.total_bytes_sent = 0
+        self.total_bytes_received = 0
+        self.packets_sent = 0
+        self.packets_received = 0
+        self.first_seen = None
+        self.last_seen = None
+        self.connections = set()
+        self.protocols = {}
+
+# Глобальный словарь для хранения статистики по устройствам
+device_stats = {}
+device_stats_lock = threading.Lock()
+
+def update_device_stats(log):
+    with device_stats_lock:
+        device_ip = log['ip']
+        if device_ip not in device_stats:
+            device_stats[device_ip] = DeviceStats()
+            device_stats[device_ip].first_seen = log['time']
+        
+        stats = device_stats[device_ip]
+        stats.last_seen = log['time']
+        stats.total_bytes_received += int(log['length'])
+        stats.packets_received += 1
+        stats.connections.add(log['destination_ip'])
+        
+        # Определяем протокол по порту или другим признакам
+        protocol = determine_protocol(log)
+        if protocol:
+            stats.protocols[protocol] = stats.protocols.get(protocol, 0) + 1
+
+def determine_protocol(log):
+    # Простая логика определения протокола
+    # Можно расширить в зависимости от доступных данных
+    if 'dns' in log.get('type', '').lower():
+        return 'DNS'
+    elif 'http' in log.get('type', '').lower():
+        return 'HTTP'
+    elif 'https' in log.get('type', '').lower():
+        return 'HTTPS'
+    return 'Unknown'
+
+@app.route('/device-stats')
+def get_device_stats():
+    with device_stats_lock:
+        stats = {}
+        for ip, device in device_stats.items():
+            stats[ip] = {
+                'total_bytes_sent': device.total_bytes_sent,
+                'total_bytes_received': device.total_bytes_received,
+                'packets_sent': device.packets_sent,
+                'packets_received': device.packets_received,
+                'first_seen': device.first_seen,
+                'last_seen': device.last_seen,
+                'active_connections': len(device.connections),
+                'protocols': device.protocols
+            }
+        return jsonify(stats)
+
+@app.route('/device-stats/<ip>')
+def get_device_stat(ip):
+    with device_stats_lock:
+        if ip not in device_stats:
+            return jsonify({'error': 'Device not found'}), 404
+        
+        device = device_stats[ip]
+        return jsonify({
+            'total_bytes_sent': device.total_bytes_sent,
+            'total_bytes_received': device.total_bytes_received,
+            'packets_sent': device.packets_sent,
+            'packets_received': device.packets_received,
+            'first_seen': device.first_seen,
+            'last_seen': device.last_seen,
+            'active_connections': len(device.connections),
+            'protocols': device.protocols
+        })
+
+# Обновляем обработчик новых логов
+def handle_new_log(log):
+    update_device_stats(log)
+    # ... existing code ...
+
 # Run the application
 if __name__ == "__main__":
     socketio.run(app, host="0.0.0.0", port=5000)
