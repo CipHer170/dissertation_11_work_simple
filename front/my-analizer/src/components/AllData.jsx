@@ -277,6 +277,7 @@ export default function AllData({ selectedDomains }) {
 
   const getIpColor = useCallback(
     (ip) => {
+      if (!ip || typeof ip !== "string") return ipColors[0]; // fallback/default color
       // Simple hash function to generate a consistent index
       let hash = 0;
       for (let i = 0; i < ip.length; i++) {
@@ -307,12 +308,8 @@ export default function AllData({ selectedDomains }) {
   // Handle IP selection with debounce
   const handleIpClick = useCallback(
     (ip) => {
-      if (selectedIp === ip) {
-        setSelectedIp(null); // Deselect if already selected
-      } else {
-        setSelectedIp(ip);
-        setCurrentPage(1); // Reset to first page when filtering
-      }
+      setSelectedIp(selectedIp === ip ? null : ip); // Toggle selection
+      setCurrentPage(1); // Reset to first page when filtering
     },
     [selectedIp]
   );
@@ -525,10 +522,42 @@ function exportAllToCSV() {
   const showNotification = useCallback((messageKey, type = "info") => {
     const message = type === 'success' 
       ? t(`notifications.success.${messageKey}`)
-      : t(`notifications.error.${messageKey}`);
+      : t(`alerts.${messageKey}`);
     setNotification({ message, type });
     setTimeout(() => setNotification(null), 5000);
   }, [t]);
+
+  // Update error handling
+  const handleError = useCallback((errorKey) => {
+    showNotification(errorKey, 'error');
+  }, [showNotification]);
+
+  // Update export error handling
+  const handleExportError = useCallback(() => {
+    handleError('exportError');
+  }, [handleError]);
+
+  // Update import error handling
+  const handleImportError = useCallback(() => {
+    handleError('importError');
+  }, [handleError]);
+
+  // Update socket error handling
+  useEffect(() => {
+    const socket = io("http://localhost:5000");
+    
+    socket.on("connect_error", () => {
+      handleError('socketError');
+    });
+
+    socket.on("error", () => {
+      handleError('connectionError');
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, [handleError]);
 
   // Update table headers
   const tableHeaders = (
@@ -733,7 +762,7 @@ function exportAllToCSV() {
           {/* Pagination */}
           <div className="pagination">
             <div className="pagination-info">
-              {t('messages.page')} {currentPage} {t('messages.of')} {totalPages} ({t('messages.total')}: {uniqueDomains.length})
+              {t('messages.page')} {currentPage} {t('messages.of')} {totalPages} {t('messages.pages')} ({t('messages.total')}: {uniqueDomains.length})
             </div>
             <div className="pagination-buttons">
               <button
@@ -746,9 +775,9 @@ function exportAllToCSV() {
                 &laquo;
               </button>
 
-              {/* Отображаем номера страниц */}
+              {/* Display page numbers */}
               {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-                // Логика для показа страниц вокруг текущей
+                // Logic for showing pages around current page
                 let pageNum;
                 if (totalPages <= 5) {
                   pageNum = i + 1;
@@ -807,10 +836,10 @@ function exportAllToCSV() {
             </div>
             <div className="chart-extraInfo">
               <div className="chart-stats-header">
-                <h3>{t('titles.stats')}</h3>
+                <h3>{t('stats.stats')}</h3>
                 <div className="chart-stats-refresh">
                   <span className="refresh-time">
-                    {t('messages.updated')}: {new Date().toLocaleTimeString()}
+                    {t('stats.updated')}: {new Date().toLocaleTimeString()}
                   </span>
                 </div>
               </div>
@@ -819,7 +848,7 @@ function exportAllToCSV() {
                 <div className="stat-item">
                   <div className="stat-icon">📊</div>
                   <div className="stat-content">
-                    <div className="stat-label">Всего запросов</div>
+                    <div className="stat-label">{t('stats.totalRequests')}</div>
                     <div className="stat-value">
                       {statistics.top10Stats.totalRequests}
                     </div>
@@ -829,12 +858,10 @@ function exportAllToCSV() {
                 <div className="stat-item">
                   <div className="stat-icon">💾</div>
                   <div className="stat-content">
-                    <div className="stat-label">Общий объем данных</div>
+                    <div className="stat-label">{t('stats.totalData')}</div>
                     <div className="stat-value">
-                      {(statistics.top10Stats.totalDataTransferred / 1024).toFixed(
-                        2
-                      )}{" "}
-                      KB
+                      {(statistics.top10Stats.totalDataTransferred / 1024).toFixed(2)}{" "}
+                      {t('stats.kb')}
                     </div>
                   </div>
                 </div>
@@ -842,7 +869,7 @@ function exportAllToCSV() {
                 <div className="stat-item">
                   <div className="stat-icon">🌐</div>
                   <div className="stat-content">
-                    <div className="stat-label">Уникальных IP</div>
+                    <div className="stat-label">{t('stats.uniqueIPs')}</div>
                     <div className="stat-value">
                       {statistics.top10Stats.uniqueIPs}
                     </div>
@@ -852,20 +879,20 @@ function exportAllToCSV() {
                 <div className="stat-item">
                   <div className="stat-icon">📈</div>
                   <div className="stat-content">
-                    <div className="stat-label">Средний размер запроса</div>
+                    <div className="stat-label">{t('stats.averageRequestSize')}</div>
                     <div className="stat-value">
                       {(
                         statistics.top10Stats.totalDataTransferred /
                         (statistics.top10Stats.totalRequests || 1)
                       ).toFixed(2)}{" "}
-                      байт
+                      {t('stats.bytes')}
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="chart-stats-details">
-                <h4>Топ-3 домена по запросам:</h4>
+                <h4>{t('stats.top3Domains')}</h4>
                 <div className="top-domains-list">
                   {Object.entries(statistics.domainStats)
                     .sort(([, a], [, b]) => b.requestCount - a.requestCount)
@@ -876,10 +903,10 @@ function exportAllToCSV() {
                         <div className="domain-info">
                           <div className="domain-name">{domain}</div>
                           <div className="domain-stats">
-                            <span>{stats.requestCount} запросов</span>
+                            <span>{stats.requestCount} {t('stats.requests')}</span>
                             <span>•</span>
                             <span>
-                              {(stats.dataTransferred / 1024).toFixed(2)} KB
+                              {(stats.dataTransferred / 1024).toFixed(2)} {t('stats.kb')}
                             </span>
                           </div>
                         </div>
@@ -894,7 +921,7 @@ function exportAllToCSV() {
 
       {showAllData && (
         <div className="notification notification-yellow">
-          <p>Отображаются все данные</p>
+          <p>{t('alerts.showingAllData')}</p>
         </div>
       )}
     </div>

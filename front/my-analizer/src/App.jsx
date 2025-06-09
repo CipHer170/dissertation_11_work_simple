@@ -25,7 +25,16 @@ function AppContent() {
   const [activeInterface, setActiveInterface] = useState("");
   const [notification, setNotification] = useState(null);
 
-  // Memoize the fetchDomains function to prevent unnecessary re-renders
+  // Define showNotification first
+  const showNotification = useCallback((messageKey, type = "info") => {
+    const message = type === 'success' 
+      ? t(`notifications.success.${messageKey}`)
+      : t(`alerts.${messageKey}`);
+    setNotification({ message, type });
+    setTimeout(() => setNotification(null), 5000);
+  }, [t]);
+
+  // Then define fetchDomains
   const fetchDomains = useCallback(async () => {
     try {
       const res = await fetch("http://localhost:5000/logs");
@@ -43,20 +52,15 @@ function AppContent() {
       setSelectedDomains(initialSelected);
       setSavedSelectedDomains(initialSelected);
     } catch (err) {
-      console.error("Ошибка загрузки доменов:", err);
-      showNotification("Ошибка загрузки доменов", "error");
+      console.error("Error loading domains:", err);
+      showNotification('loadError', 'error');
     }
-  }, []);
+  }, [showNotification]);
 
   // Load domains when component mounts
   useEffect(() => {
     fetchDomains();
   }, [fetchDomains]);
-
-  const showNotification = useCallback((message, type = "info") => {
-    setNotification({ message, type });
-    setTimeout(() => setNotification(null), 5000);
-  }, []);
 
   const handleStopCapture = useCallback(async () => {
     try {
@@ -66,30 +70,30 @@ function AppContent() {
       if (res.ok) {
         setIsCapturing(false);
         setActiveInterface("");
-        showNotification("Захват остановлен", "success");
+        showNotification('captureStopped', 'success');
       } else {
-        showNotification("Ошибка остановки захвата", "error");
+        showNotification('stopError', 'error');
       }
     } catch (err) {
-      console.error("Ошибка остановки захвата:", err);
-      showNotification("Ошибка остановки захвата", "error");
+      console.error("Error stopping capture:", err);
+      showNotification('stopError', 'error');
     }
   }, [showNotification]);
-
-  const handleDomainSelectionChange = useCallback((updatedSelected) => {
-    setSelectedDomains(updatedSelected);
-  }, []);
-
-  const handleSaveSelection = useCallback(() => {
-    setSavedSelectedDomains(selectedDomains);
-    showNotification("Выбор доменов сохранен", "success");
-  }, [selectedDomains, showNotification]);
 
   const handleStartCapture = useCallback((interfaceName) => {
     setIsCapturing(true);
     setActiveInterface(interfaceName);
-    showNotification(`Захват запущен на интерфейсе ${interfaceName}`, "success");
+    showNotification('captureStarted', 'success');
   }, [showNotification]);
+
+  const handleSaveSelection = useCallback(() => {
+    setSavedSelectedDomains(selectedDomains);
+    showNotification('saved', 'success');
+  }, [selectedDomains, showNotification]);
+
+  const handleDomainSelectionChange = useCallback((updatedSelected) => {
+    setSelectedDomains(updatedSelected);
+  }, []);
 
   // Memoize the page content to prevent unnecessary re-renders
   const pageContent = useMemo(() => {
